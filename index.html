@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <html data-theme="light"></html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/339c6d6e8b.js" crossorigin="anonymous"></script>
+    <title>Fruit Market</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-orange-600 text-white container mx-auto px-4 rounded-full">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Nav buttons -->
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <!--Logo  -->
+                </div>
+                <div class="">
+                    <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                </div>
+                <!-- Search box -->
+                <div class="navbar-end text-black ">
+                    <!-- <div class="form-control rounded-full">
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    </div> -->
+                    <div class="relative text-gray-600 invisible lg:visible">
+                        <input type="search" name="serch" placeholder="Search"
+                            class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
+                        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                            <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                                xml:space="preserve" width="512px" height="512px">
+                                <path
+                                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- SLIDER -->
+        <Section class="container mx-auto px-4 mt-10 ">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+
+                    <img src="/images/banner1.png" class="w-full" />
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <div>
+                            <h1 class="text-base lg:text-7xl font-bold text-white text-center m-4">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="lg:text-l font-medium text-white text-center m-4">We supply highly quality organic
+                                product</p>
+                            <div class="text-base lg:text-xl flex flex-col items-center justify-center">
+                                <button class="btn btn-error text-white content-center">Shop Now</button>
+                            </div>
+                        </div>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </Section>
+    </header>
+    <main>
+
+        <!-- Deals of the day -->
+        <Section>
+            <div class="container mx-auto px-4 mt-10 grid grid-cols-1 justify-items-center lg:flex justify-around">
+                <div class="m-4">
+                    <h3 class="sm:text-2xl text-center text-base lg:text-5xl font-bold">Deal of the day</h3>
+                    <p class="sm:text-xl">Grab the latest deal of our fruits collection.</p>
+                </div>
+                <!-- Countdown -->
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:59;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="container mx-auto px-4 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-10">
+                <!-- Card 1 -->
+                <div class="card w-96 bg-base-100 shadow-xl mr-5">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit9.png" alt="Fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>6.90$ - 12.85$</p>
+                        <h2 class="card-title">Banana</h2>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-active btn-link no-underline text-red-900 ">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card w-96 bg-base-100 shadow-xl p-1">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit1.png" alt="Fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>12.90$ - 18.85$</p>
+                        <h2 class="card-title">Grapes</h2>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-active btn-link no-underline text-red-900 ">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit4.png" alt="Fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>30.00$ - 45.85$</p>
+                        <h2 class="card-title">Strawberry</h2>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-active btn-link no-underline text-red-900 ">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card w-50 bg-base-100 shadow-xl lg:w-50">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit3.png" alt="Fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>19.90$ - 25.00$</p>
+                        <h2 class="card-title">Ripped Mango</h2>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-active btn-link no-underline text-red-900 ">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shop All button -->
+            <div>
+                <div class="text-base lg:text-xl flex flex-col items-center justify-center">
+                    <button class="btn btn-error text-white content-center">Shop All</button>
+                </div>
+            </div>
+        </Section>
+
+        <!-- Meet our team -->
+        <Section class="h-2" >
+            <div class="container mx-auto px-4 mt-10 h-16">
+
+            
+            <div class="hero min-h-screen" style="background-image: url(images/team.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Meet the Team</h1>
+                        <p class="mb-5">Meet the best in class people from our company. Who has passion to serve you the best quality in competitive price. </p>
+                        <div>
+                            <!-- Team Members -->
+                            <div class="flex flex-wrap">
+                                <!-- Member 1 -->
+                                <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                                    <div class="flex flex-col">
+                                        <!-- Avatar -->
+                                        <a href="#" class="mx-auto">
+                                            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                                src="images/member1.png"></a>
+                                        <!-- Details -->
+                                        <div class="text-center mt-6">
+                                            <!-- Name -->
+                                            <h1 class="text-white-900 text-xl font-bold mb-1">Awlad Hossain</h1>
+                                            <!-- Title -->
+                                            <div class="text-white-700 font-light mb-2">Founder CEO</div>
+                                            <!-- Social Icons -->
+                                            <div class="flex items-center justify-center">
+                                                <i class="fa-brands fa-facebook px-1" style="color: #df308d;"></i></a>
+                                                <i class="fa-brands fa-linkedin px-1" style="color: #eb0fa5;"></i></a>
+                                                <i class="fa-brands fa-instagram px-1" style="color: #ce1c49;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Member 2 -->
+                                <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                                    <div class="flex flex-col">
+                                        <!-- Avatar -->
+                                        <a href="#" class="mx-auto">
+                                            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                                src="images/member2.png"></a>
+                                        <!-- Details -->
+                                        <div class="text-center mt-6">
+                                            <!-- Name -->
+                                            <h1 class="text-white-900 text-xl font-bold mb-1">Safia Chowdhury</h1>
+                                            <!-- Title -->
+                                            <div class="text-white-700 font-light mb-2">Fruits Expert</div>
+                                            <!-- Social Icons -->
+                                            <div class="flex items-center justify-center">
+                                                <i class="fa-brands fa-facebook px-1" style="color: #df308d;"></i></a>
+                                                <i class="fa-brands fa-linkedin px-1" style="color: #eb0fa5;"></i></a>
+                                                <i class="fa-brands fa-instagram px-1" style="color: #ce1c49;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Member 3-->
+                                <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                                    <div class="flex flex-col">
+                                        <!-- Avatar -->
+                                        <a href="#" class="mx-auto">
+                                            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                                src="images/member3.png"></a>
+                                        <!-- Details -->
+                                        <div class="text-center mt-6">
+                                            <!-- Name -->
+                                            <h1 class="text-white-900 text-xl font-bold mb-1">Rokib Hossain </h1>
+                                            <!-- Title -->
+                                            <div class="text-white-700 font-light mb-2">Fruits Specialist</div>
+                                            <!-- Social Icons -->
+                                            <div class="flex items-center justify-center">
+                                                <i class="fa-brands fa-facebook px-1" style="color: #df308d;"></i></a>
+                                                <i class="fa-brands fa-linkedin px-1" style="color: #eb0fa5;"></i></a>
+                                                <i class="fa-brands fa-instagram px-1" style="color: #ce1c49;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Member 4 -->
+                                <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                                    <div class="flex flex-col">
+                                        <!-- Avatar -->
+                                        <a href="#" class="mx-auto">
+                                            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                                src="images/member4.png"></a>
+                                        <!-- Details -->
+                                        <div class="text-center mt-6">
+                                            <!-- Name -->
+                                            <h1 class="text-white-900 text-xl font-bold mb-1">Chaity Hasan</h1>
+                                            <!-- Title -->
+                                            <div class="text-white-700 font-light mb-2">Fruits Expert</div>
+                                            <!-- Social Icons -->
+                                            <div class="flex items-center justify-center">
+                                                <i class="fa-brands fa-facebook px-1" style="color: #df308d;"></i></a>
+                                                <i class="fa-brands fa-linkedin px-1" style="color: #eb0fa5;"></i></a>
+                                                <i class="fa-brands fa-instagram px-1" style="color: #ce1c49;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
